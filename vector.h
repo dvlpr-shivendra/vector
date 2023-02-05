@@ -1,8 +1,13 @@
 class vector
 {
 private:
-    /* data */
+    int size;
+    double *elements; // address of first element
+    int space;        // no of elements plus free slots
+
 public:
-    vector(/* args */);
+    vector(int);
     ~vector();
+    void reserve(int);
+    int capacity() const;
 };
