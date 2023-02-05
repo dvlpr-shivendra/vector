@@ -30,6 +30,17 @@ void vector::reserve(int new_alloc)
     space = new_alloc;
 }
 
+void vector::push_back(double d)
+// increase vector size by one; initialize the new element with d
+{
+    if (space == 0)
+        reserve(8); // start with space for 8 elements
+    else if (size == space)
+        reserve(2 * space); // get more space
+    elements[size] = d;     // add d at end
+    ++size;                 // increase the size (sz is the number of elements)
+}
+
 int vector::capacity() const
 {
     return space;

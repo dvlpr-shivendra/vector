@@ -1,11 +1,15 @@
 #include <iostream>
 #include "vector.cpp"
 
-int main(int argc, char const *argv[])
+int main()
 {
-    double *p = new double[10];
-    vector v(10);
-    delete[] p;
+    vector numbers(10);
+
+    numbers.push_back(10.5);
+    numbers.push_back(19.13);
+    numbers.push_back(210.59);
+    numbers.push_back(0.35);
+    numbers.push_back(100.00);
 
     return 0;
 }
