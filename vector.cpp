@@ -1,6 +1,6 @@
 #include "vector.h"
 
-vector::vector(int s)
+vector::vector(int s) : size(s), elements{new double[size]}
 {
     for (int i = 0; i < s; ++i)
     {
