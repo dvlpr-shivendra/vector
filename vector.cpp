@@ -45,3 +45,10 @@ int vector::capacity() const
 {
     return space;
 }
+
+double &vector::operator[](int n)
+{
+    return elements[n];
+}
+
+const double &vector::operator[](int n) const { return elements[n]; }

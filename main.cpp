@@ -11,5 +11,7 @@ int main()
     numbers.push_back(0.35);
     numbers.push_back(100.00);
 
+    std::cout << numbers[2] << std::endl;
+
     return 0;
 }
