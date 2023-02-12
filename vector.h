@@ -7,7 +7,7 @@ private:
 
 public:
     vector();
-    vector(int);
+    explicit vector(int);
     ~vector();
     void push_back(double);
     void reserve(int);
