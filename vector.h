@@ -6,6 +6,7 @@ private:
     int space;        // no of elements plus free slots
 
 public:
+    vector();
     vector(int);
     ~vector();
     void push_back(double);

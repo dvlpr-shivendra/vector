@@ -1,5 +1,7 @@
 #include "vector.h"
 
+vector::vector() : size{0}, elements{nullptr}, space{0} {}
+
 vector::vector(int s) : size(s), elements{new double[size]}
 {
     for (int i = 0; i < s; ++i)
