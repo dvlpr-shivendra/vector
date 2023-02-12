@@ -12,6 +12,7 @@ public:
     void push_back(double);
     void reserve(int);
     int capacity() const;
+    int getSize() const;
     double &operator[](int);
     const double &operator[](int i) const;
 };

@@ -48,6 +48,11 @@ int vector::capacity() const
     return space;
 }
 
+int vector::getSize() const
+{
+    return size;
+}
+
 double &vector::operator[](int n)
 {
     return elements[n];
